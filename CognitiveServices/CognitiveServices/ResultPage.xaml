@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CognitiveServices.ResultPage" BackgroundImage="LAMPADINATEMPLATE.jpg" BackgroundColor="Black">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="img" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Fill" WidthRequest="300" HeightRequest="300" Margin="10" />
+            <ScrollView Grid.Row="2" x:Name="scroll">
+                <Label  x:Name="lbl" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontAttributes="Bold" FontSize="Medium" TextColor="Black" Margin="15,5" 
+                        AutomationProperties.IsInAccessibleTree="True" 
+                         AutomationProperties.Name="Emozione Rilevata" 
+                    AutomationProperties.HelpText= ""
+                        AutomationId="2"/> 
+                <Label  x:Name="tagsLabel" HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  FontAttributes="Bold" FontSize="Medium" TextColor="Black" Margin="15,5" 
+                        AutomationProperties.IsInAccessibleTree="True" 
+                         AutomationProperties.Name="Emozione Rilevata" 
+                    AutomationProperties.HelpText= ""
+                        /> 
+                        
+                        
+            </ScrollView>
+      
+            
+           
+            <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                <!--    <Image Source="translate.png" HorizontalOptions="Start" VerticalOptions="Start" HeightRequest="40" WidthRequest="40" ></Image> -->
+                <Button x:Name="btnTraduci" Text="Traduci il risultato" TextColor="Black" Clicked="btnTraduciClicked" BorderWidth="0" Image="translate.png" HeightRequest="50" AutomationProperties.IsInAccessibleTree="True" AutomationProperties.Name="Traduci Risultato" AutomationProperties.HelpText="Premi per tradurre il risultato ottenuto dalla rivelazione" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CognitiveServices"
+             x:Class="CognitiveServices.MainPage"
+             >
+    <Grid>
+                                 <Image Source="backGroundFaded.jpeg" Aspect="AspectFill"></Image>
+
+         <StackLayout HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="350" Spacing="-20" Orientation="Horizontal" TranslationY="10">
+            <Image x:Name="appLogo" Source="AppLogo" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center"  TranslationY="15" TranslationX="-25"> </Image>
+            <Label x:Name="appName"
+                   Text="VisionPlus"
+                   FontAttributes="Bold"
+                   AutomationProperties.IsInAccessibleTree="True" 
+                   AutomationProperties.Name="Nome dell'app"
+                   TranslationY="30"
+                   />
+ 
+                   <Button x:Name="btnInfo" 
+                    Clicked="btnInfoClicked"
+                    Image="info.png"
+                    HeightRequest="40"
+                    WidthRequest="40"
+                    HorizontalOptions="End" 
+                    VerticalOptions="Center" 
+                    TranslationX="175" 
+                    TranslationY="15"
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Crediti" 
+                    AutomationProperties.HelpText="Premi per conoscere i crediti e gestire le impostazioni dell'applicazione" />           
+            
+        </StackLayout>
+        <StackLayout Margin="0,75">
+              <Label BackgroundColor="Black" WidthRequest="0" HeightRequest="5" VerticalOptions="Start" ></Label>
+        </StackLayout>
+       
+       
+
+        
+      
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" Spacing="20">
+            
+            <Button x:Name="btnEmozione" 
+                    Text="Rileva Emozione" 
+                    TextColor="Black"
+                    Clicked="btnEmozioniClicked"
+                    BorderWidth="2"
+                    HeightRequest="100"
+                    BorderRadius="20"
+
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Rileva Emozione" 
+                    AutomationProperties.HelpText="Premi per scattare un selfie ed ascoltare l'emozione rilevata" />
+
+            <Button x:Name="btnVolti" 
+                    Text="Rileva Volti" 
+                                        TextColor="Black"
+
+                    Clicked="btnPersoneClicked"
+                    HeightRequest="100"
+                    BorderWidth="2"
+                    BorderRadius="20"
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Rileva Volti" 
+                    AutomationProperties.HelpText="Premi per scattare una foto ed ascoltare quanti volti sono presenti" />
+
+            <Button x:Name="btnScena" 
+                    Text="Descrivi Scena"
+                                        TextColor="Black"
+
+                    Clicked="btnDescriviClicked"
+                    BorderWidth="2"
+                    HeightRequest="100"
+                    BorderRadius="20"
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Descrivi Scena" 
+                    AutomationProperties.HelpText="Premi per scattare una foto ed ascoltare la descrizione della scena" />
+
+            <Button x:Name="btnTesto" 
+                    Text="Rileva Testo"
+                                        TextColor="Black"
+
+                    Clicked="btnTestoClicked"
+                    BorderWidth="2"
+                    HeightRequest="100"
+                    BorderRadius="20"                    
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Rileva Testo" 
+                    AutomationProperties.HelpText="Premi per scattare una foto ad un testo ed ascoltare la sua lettura" />
+            
+        </StackLayout>
+
+        <Grid BackgroundColor="#80000000" x:Name="loader" IsVisible="False" 
+                    AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Indicatore di caricamento" 
+                    AutomationProperties.HelpText="Caricamento in corso">
+            
+            <ActivityIndicator IsRunning="True" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="60" WidthRequest="60" />
+            
+        </Grid>
+    </Grid>
+   
+
+</ContentPage>

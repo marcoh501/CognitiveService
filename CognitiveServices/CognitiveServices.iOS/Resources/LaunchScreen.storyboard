@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gAE-YM-kbH">
+            <objects>
+                <viewController id="X5k-f2-b5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4647" translatesAutoresizingMaskIntoConstraints="NO" image="LAMPADINATEMPLATE.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.66274509803921566" green="0.68627450980392157" blue="0.67843137254901964" alpha="1"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4648" firstItem="4647" firstAttribute="leading" secondItem="yd7-JS-zBw" secondAttribute="leadingMargin" constant="-20"/>
+                            <constraint id="4649" firstItem="4647" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="-20"/>
+                            <constraint id="4650" firstItem="yd7-JS-zBw" firstAttribute="bottom" secondItem="4647" secondAttribute="bottom"/>
+                            <constraint id="4651" firstItem="yd7-JS-zBw" firstAttribute="trailingMargin" secondItem="4647" secondAttribute="trailing" constant="-20"/>
+                        </constraints>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.65490196078431373" green="0.67843137254901964" blue="0.68235294117647061" alpha="1"/>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LAMPADINATEMPLATE.jpg" width="1242" height="2208"/>
+    </resources>
+</document>

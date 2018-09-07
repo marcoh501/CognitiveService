@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CognitiveServices.CreditPage" 
+             BackgroundImage="LAMPADINATEMPLATE.jpg">
+    <ContentPage.Content>
+        <StackLayout TranslationY="80">
+             <Image Source="AppLogo.png" WidthRequest="100" HeightRequest="100"  ></Image>
+
+            <Label x:Name="nomeAppLabel" Text="VisionPlus" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" FontAttributes="Bold"
+                  ></Label>
+            <Label x:Name="versioneAppLabel" Text="Versione App 1.0" XAlign="Center"></Label>
+                        <Label x:Name="infolabel" Text="Sviluppata da : Marco Cancelli" XAlign="Center"></Label>
+            <Label  x:Name="lineLabel" Text="" BackgroundColor="Black" WidthRequest="400" HeightRequest="4"></Label>
+       <StackLayout>  
+                <StackLayout TranslationX="0"  Orientation="Horizontal">
+                             <Image Source="options.png" WidthRequest="30" HeightRequest="30"  HorizontalOptions="Start"></Image>
+                <Label  x:Name="optionLabel" Text="Option" TranslationX="-5"></Label>
+                    </StackLayout>
+                   <StackLayout TranslationX="30" Orientation="Horizontal"> 
+         <Label x:Name="enableAccessibilityLabel" Text="Attiva sintesi vocale" XAlign="Start" HorizontalOptions="Start" HorizontalTextAlignment="Start"></Label>
+                       <Button x:Name="accessibilityButton" Image="ArrowRight" WidthRequest="50" HeightRequest="50"   TranslationX="60" TranslationY="-7" 
+                   Clicked="btnAccessibilityClicked"
+                               AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Attiva sintesi vocale" 
+                    AutomationProperties.HelpText="Premi per andare nelle impostazioni ed abilitare la sintesi vocale"/>
+                 </StackLayout>
+                <StackLayout TranslationY="30" TranslationX="30" Orientation="Horizontal">
+                       <Label x:Name="enableCameraLabel" TranslationY="-45" Text="Attiva la fotocamera" XAlign="Start" HorizontalOptions="Start" HorizontalTextAlignment="Start" ></Label>
+               
+                    
+                    <Button x:Name="cameraButton" Image="ArrowRight" WidthRequest="60" HeightRequest="20"   TranslationY="-43"    TranslationX="53" 
+                    Clicked="btnCameraClicked"
+                            AutomationProperties.IsInAccessibleTree="True" 
+                    AutomationProperties.Name="Attiva la fotocamera" 
+                    AutomationProperties.HelpText="Premi per andare nelle impostazioni ed abilitare i permessi per utilizzare la fotocamera"/>
+                
+           </StackLayout>
+        </StackLayout>
+            
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
